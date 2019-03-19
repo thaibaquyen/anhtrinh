@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap-3.1.1-dist/bootstrap-3.1.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-3.1.1-dist/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" />
+    <script type="text/javascript" src="bootstrap-3.1.1-dist/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        #tin {
+            height: 130px;
+            overflow: hidden;
+        }
+
+        #anh img {
+            width: 250px;
+            height: 130px;
+        }
+
+        #anh {
+            width: 250px;
+            height: 130px;
+        }
+
+        #tinnew img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #tinnew #tin {
+            margin-top: 0px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #tinnew {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 960px;margin: 0px auto;">
+        <div class="row container">
+            <div class="col-sm-4"><img src="~/image/logo.jpg" width="150px" height="100px" alt="logo" /></div>
+            <div class="col-sm-8" style="color: aquamarine;"><p style="font-size: 40px;">Dân trí</p></div>
+        </div>
+        <div class="container-fluid row" style="background-color: darkseagreen;">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSitequyenba</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action="/action_page.php">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+      @RenderBody();
+        <div style="background-color: slategrey;text-align: center;">the end</div>
+        <div class="row col-sm-12" style="text-align: center;">
+            <div class="col-sm-4">
+                <p>chủ nhiệm sản xuất</p>
+                <p>thái bá quyền</p>
+            </div>
+            <div class="col-sm-4">
+                <p>fax</p>
+                <p>0974811196</p>
+            </div>
+            <div class="col-sm-4">
+                <p>=============</p>
+                <p>==================</p>
+            </div>
+        </div>
+    </div>
+</body>  
+</html>
